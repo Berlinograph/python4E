@@ -1,0 +1,25 @@
+#einfache Funktion mit Parametern (eingerückt)
+#Funktion wird auf eine Anzahl der Tage begrenzt, die Anzahl wird in der letzten Zeile angezeigt (7)
+def print_sekunden_pro_tag(tage) :
+    stunden = tage * 24
+    minuten = stunden * 60
+    sekunden = minuten * 60
+    print(sekunden)
+#ruft die Funktion auf
+print_sekunden_pro_tag(7)
+#an Funktionen Werte übergeben, als Parameter in die Klammern
+#Wieviele Sekunden hat eine Anzahl an Tagen, siehe Beispiel oben
+# Parameter Zeile 5 = Tage
+# Anzahl der Tage = Zeile 11
+
+# Werte zurück geben um diese zu nutzen, return gibt den Wert dann zurück
+def tage_in_sekunden(tage) :
+    stunden = tage * 24
+    minuten = stunden * 60
+    sekunden = minuten * 60
+    return sekunden
+# Der Aufruf der Funktion tage_in_sekunden wurde gelöscht um mit dem neuen Namen sekunden und dessen Wert ersetzt
+sekunden_gesamt = tage_in_sekunden(7)
+millisekunden = sekunden_gesamt * 1000
+print(millisekunden)
+#Rückgabewert wurde in einer Variable gespeichet und kann damit später wiederverwendet werden
